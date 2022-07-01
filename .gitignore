@@ -1,2 +1,4 @@
 .env
 discord.log
+.vscode/
+response_templates/
