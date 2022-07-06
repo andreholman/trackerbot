@@ -5,7 +5,6 @@ import logging
 import os
 import json
 import time
-from jinja2 import make_logging_undefined
 from termcolor import colored
 from dotenv import load_dotenv
 import asyncio
@@ -59,7 +58,7 @@ class BotClient(discord.Client):
 			case True:
 				match r.get("map"):
 					case None:
-						if r["mode"] == "LOBBY" and pr["online"] == False:
+						if r["mode"] == "LOBBY" and not pr["online"]:
 							await BotClient.post_log(f'Joined Hypixel and entered the {clean_name(r["gameType"])} lobby.', 991322369291452517)
 						else:
 							await BotClient.post_log(f'Joined the {clean_name(r["gameType"])} lobby.', 991322369291452517)
@@ -69,7 +68,7 @@ class BotClient(discord.Client):
 						parsed_mode = readify(r["mode"])
 						if r["mode"] == pr["mode"]:
 							await BotClient.post_log(f'Requeued {parsed_mode} to the map {r["map"]}.', 991322369291452517)
-						elif r["mode"] != pr["mode"] or pr["online"] == False:
+						elif r["mode"] != pr["mode"] or not pr["online"]:
 							await BotClient.post_log(f'Queued {clean_name(r["gameType"])} in {parsed_mode} on the map {r["map"]}', 991322369291452517)
 			case False:
 				await BotClient.post_log("Left Hypixel", 991322369291452517)
@@ -125,6 +124,8 @@ class BotClient(discord.Client):
 	async def on_ready(self):
 		print(colored('Logged on as {0}!'.format(self.user), "blue"))
 		await BotClient.post_log("Discord bot restarted")
+
+		activity = discord.Activity(name="Duels Arena", type=discord.ActivityType.playing)
 		
 		async def playercount_periodic():
 			requested_counts = json.loads(requests.get(
@@ -224,20 +225,46 @@ class BotClient(discord.Client):
 
 	async def on_message(self, message):
 		if message.author != self.user and message.content[:11] == "%arenapref ":
-			requested_uuid = json.loads(requests.get("https://api.mojang.com/users/profiles/minecraft/" + message.content[11:]).text)
-			requested_player_response = json.loads(requests.get(
-				"http://api.hypixel.net/player",
-				params={"key":hypixel_token, "uuid": requested_uuid}
-			).text)
-			requested_player_response[1]
-			await message.channel.send()
-		elif message.author != self.user and message.content[:8] == "%players":
-			requested_counts = json.loads(requests.get(
-				"http://api.hypixel.net/counts",
-				params={"key":hypixel_token}
-			).text)
-			if requested_counts["success"]:
-				await message.channel.send(f'{str(requested_counts["games"]["DUELS"]["modes"]["DUELS_DUEL_ARENA"])} in Duels Arena and {str(requested_counts["playerCount"])} total.')
-
+			print("modes request for " + message.content[11:])
+			requested_uuid = requests.get("https://api.mojang.com/users/profiles/minecraft/" + message.content[11:]).text
+			if len(requested_uuid):
+				requested_ign = json.loads(requested_uuid)["name"]
+				requested_player_response = json.loads(requests.get(
+					"http://api.hypixel.net/player",
+					params={"key": hypixel_token, "uuid": json.loads(requested_uuid)["id"]}
+				).text) # name: username with right caps, id: uuid
+				if requested_player_response["player"] and requested_player_response["player"]["stats"]["Duels"].get("arena_mode_uhc"):
+					duels_stats = requested_player_response["player"]["stats"]["Duels"]
+					modes = ("uhc", "op", "classic", "bow", "no_debuff", "soup")
+					mode_emotes = {"uhc": "<:UHC:994047777568981012>",
+						"op": "<:OP:994047775056605184>",
+						"classic": "<:Classic:994047773102047272>",
+						"bow": "<:Bow:994047772170919976>",
+						"no_debuff": "<:NDB:994047774037397564>",
+						"soup": "<:Soup:994047776474267678>"
+					}
+					
+					prefs = f'Preferences for {requested_ign}:'
+					for mode in modes:
+						prefs += f'\n{mode_emotes[mode]} {duels_stats.get("arena_mode_" + mode)}'
+			
+					await message.channel.send(prefs)
+				else:
+					await message.channel.send("That player has never played Duels Arena.")
+			else:
+				await message.channel.send("That player doesn't exist.")
+		elif message.author != self.user and message.content[:5] == "%ping":
+			message_coro = await message.channel.send(':ping_pong: Pinging...')
+			message_sent = await message.channel.fetch_message(message_coro.id)
+			timestamp_delta = (message_sent.created_at-message.created_at).total_seconds()
+			
+			await message_sent.edit(content=':ping_pong: Pong! It took {}ms'.format(int(timestamp_delta*500)))
+		elif message.author != self.user and (message.content == "%kill" or message.content == "%quit"):
+			await message.add_reaction("☑️")
+			await client.close()
+			print(colored("CLIENT CLOSED", "red"))
+		
+		if "lil vro" in message.content.lower():
+			await message.add_reaction("<a:onglilvro:992574992556490814>")
 client = BotClient()
 client.run(discord_token)

@@ -19,7 +19,7 @@
             "knownAliasesLower": [
                 "5of"
             ],
-            "lastLogin": 1656626801399,
+            "lastLogin": 1657068015425,
             "playername": "5of",
             "achievementsOneTime": [
                 "general_first_join",
@@ -116,7 +116,9 @@
                 "quake_think_fast",
                 "quake_doubling_up",
                 "walls_customized",
-                "duels_build_battle"
+                "duels_build_battle",
+                "housing_join_guild",
+                "buildbattle_mobster"
             ],
             "stats": {
                 "SkyBlock": {
@@ -128,7 +130,7 @@
                     }
                 },
                 "Arena": {
-                    "coins": 284171,
+                    "coins": 292006,
                     "keys": 1,
                     "coins_spent": 90000,
                     "magical_chest": 200,
@@ -179,7 +181,7 @@
                     "healed_1v1": 130
                 },
                 "GingerBread": {
-                    "coins": 363676,
+                    "coins": 371511,
                     "packages": [
                         "achievementsupdatedd",
                         "achievementsupdatedc",
@@ -196,13 +198,13 @@
                     "horn": "DEFAULT"
                 },
                 "Paintball": {
-                    "coins": 363676,
+                    "coins": 371511,
                     "packages": [
                         "achievement_flag_2"
                     ]
                 },
                 "Quake": {
-                    "coins": 364048,
+                    "coins": 371883,
                     "packages": [
                         "achievement_flag_3"
                     ],
@@ -226,11 +228,11 @@
                     "deaths": 12
                 },
                 "VampireZ": {
-                    "coins": 363676,
+                    "coins": 371511,
                     "updated_stats": true
                 },
                 "Walls": {
-                    "coins": 363676,
+                    "coins": 371511,
                     "InventoryLayout2": {
                         "22": "287,0,NONAME",
                         "0": "274,0,NONAME",
@@ -241,10 +243,10 @@
                     }
                 },
                 "Battleground": {
-                    "coins": 14980
+                    "coins": 22215
                 },
                 "SkyWars": {
-                    "coins": 88936,
+                    "coins": 95526,
                     "skywars_chests": 12,
                     "levelFormatted": "§f7⋆",
                     "souls": 101,
@@ -524,11 +526,11 @@
                     "tnt_madness_explained": 1
                 },
                 "SuperSmash": {
-                    "coins": 14640,
+                    "coins": 20460,
                     "lastLevel_THE_BULK": 0
                 },
                 "TNTGames": {
-                    "coins": 16115,
+                    "coins": 21380,
                     "wins": 0,
                     "packages": [
                         "shop_2018",
@@ -556,7 +558,7 @@
                     "winstreak": 0
                 },
                 "HungerGames": {
-                    "coins": 15665,
+                    "coins": 21645,
                     "wins_teams_normal": 0,
                     "wins": 0,
                     "packages": [
@@ -568,7 +570,7 @@
                     "autoarmor": true
                 },
                 "Arcade": {
-                    "coins": 1294035,
+                    "coins": 1305033,
                     "simon_song": false,
                     "round_wins_simon_says": 55,
                     "top_score_simon_says": 28,
@@ -576,7 +578,7 @@
                     "wins_simon_says": 3
                 },
                 "Walls3": {
-                    "coins": 362420,
+                    "coins": 368985,
                     "classes": {
                         "herobrine": {
                             "skill_level_dChecked5": true,
@@ -612,12 +614,12 @@
                     ]
                 },
                 "UHC": {
-                    "coins": 13565,
+                    "coins": 19570,
                     "saved_stats": true,
                     "clearup_achievement": true
                 },
                 "MCGO": {
-                    "coins": 15349,
+                    "coins": 21984,
                     "bombs_defused": 0,
                     "bombs_planted": 0,
                     "game_wins": 2,
@@ -666,7 +668,7 @@
                     "arena_mode_op": "HIGH",
                     "arena_mode_soup": "HIGH",
                     "arena_mode_bow": "LOW",
-                    "games_played_duels": 6760,
+                    "games_played_duels": 7662,
                     "chat_enabled": "on",
                     "maps_won_on": [
                         "Duel Arena"
@@ -688,31 +690,31 @@
                     "best_bridge_winstreak": 0,
                     "best_parkour_winstreak": 0,
                     "best_boxing_winstreak": 0,
-                    "best_arena_winstreak": 122,
-                    "best_winstreak_mode_duel_arena": 122,
-                    "current_winstreak_mode_duel_arena": 9,
-                    "current_arena_winstreak": 9,
-                    "damage_dealt": 197304,
-                    "duel_arena_damage_dealt": 196587,
-                    "duel_arena_health_regenerated": 70120,
-                    "duel_arena_melee_hits": 115543,
-                    "duel_arena_melee_swings": 228763,
-                    "duel_arena_rounds_played": 6703,
-                    "duel_arena_wins": 5893,
-                    "health_regenerated": 70120,
-                    "melee_hits": 115683,
-                    "melee_swings": 229093,
-                    "rounds_played": 6705,
-                    "wins": 5893,
-                    "blocks_placed": 16919,
-                    "coins": 3164,
-                    "duel_arena_blocks_placed": 16360,
+                    "best_arena_winstreak": 281,
+                    "best_winstreak_mode_duel_arena": 281,
+                    "current_winstreak_mode_duel_arena": 3,
+                    "current_arena_winstreak": 3,
+                    "damage_dealt": 224493,
+                    "duel_arena_damage_dealt": 223776,
+                    "duel_arena_health_regenerated": 79173,
+                    "duel_arena_melee_hits": 131480,
+                    "duel_arena_melee_swings": 259258,
+                    "duel_arena_rounds_played": 7599,
+                    "duel_arena_wins": 6712,
+                    "health_regenerated": 79173,
+                    "melee_hits": 131626,
+                    "melee_swings": 259597,
+                    "rounds_played": 7602,
+                    "wins": 6712,
+                    "blocks_placed": 18750,
+                    "coins": 3728,
+                    "duel_arena_blocks_placed": 18191,
                     "arena_mode_classic": "LOW",
                     "kit_menu_option": "on",
-                    "bow_hits": 9344,
-                    "bow_shots": 24925,
-                    "duel_arena_bow_hits": 9319,
-                    "duel_arena_bow_shots": 24876,
+                    "bow_hits": 10704,
+                    "bow_shots": 28059,
+                    "duel_arena_bow_hits": 10679,
+                    "duel_arena_bow_shots": 28010,
                     "arena_mode_no_debuff": "HIGH",
                     "layout_bow_duel_layout": {
                         "0": "bow",
@@ -720,7 +722,7 @@
                         "7": "ender_pearl"
                     },
                     "duels_chests": 0,
-                    "status_field": "BEST_WINSTREAK:ALL_MODES",
+                    "status_field": "KILLS:ALL_MODES",
                     "all_modes_iron_title_prestige": 5,
                     "packages": [
                         "emblem_hype",
@@ -875,8 +877,11 @@
                         "2": "bow",
                         "9": "arrow"
                     },
-                    "all_modes_legend_title_prestige": 2,
-                    "sw_duels_kit_new3": "kit_ranked_ranked_armorer"
+                    "all_modes_legend_title_prestige": 3,
+                    "sw_duels_kit_new3": "kit_ranked_ranked_armorer",
+                    "sumo_duel_melee_hits": 6,
+                    "sumo_duel_melee_swings": 9,
+                    "sumo_duel_rounds_played": 1
                 },
                 "Bedwars": {
                     "packages": [
@@ -1413,16 +1418,17 @@
                     "kills_hollywood_MURDER_INFECTION": 1
                 },
                 "BuildBattle": {
-                    "coins": 9090,
-                    "games_played": 26,
+                    "coins": 35250,
+                    "games_played": 96,
                     "monthly_coins_a": 9090,
                     "weekly_coins_b": 960,
-                    "correct_guesses": 133,
-                    "score": 480,
-                    "wins": 13,
-                    "wins_guess_the_build": 13,
-                    "weekly_coins_a": 8130,
-                    "selected_backdrop": "backdrops_none"
+                    "correct_guesses": 583,
+                    "score": 500,
+                    "wins": 55,
+                    "wins_guess_the_build": 55,
+                    "weekly_coins_a": 34290,
+                    "selected_backdrop": "backdrops_none",
+                    "monthly_coins_b": 26160
                 },
                 "WoolGames": {
                     "progression": {
@@ -1754,19 +1760,19 @@
                 }
             },
             "claimed_century_cake200": 1649170783377,
-            "lastLogout": 1656633967185,
-            "karma": 522750,
-            "networkExp": 5604183.0,
+            "lastLogout": 1657068365659,
+            "karma": 666240,
+            "networkExp": 5771547.0,
             "achievementTracking": [],
-            "achievementPoints": 1445,
+            "achievementPoints": 1490,
             "levelingReward_0": true,
             "achievements": {
                 "duels_duels_traveller": 1,
                 "duels_duels_win_streak": 2,
-                "duels_duels_winner": 5898,
-                "general_wins": 3111,
-                "duels_arena_mastery": 4653,
-                "general_challenger": 147,
+                "duels_duels_winner": 6720,
+                "general_wins": 3564,
+                "duels_arena_mastery": 5303,
+                "general_challenger": 170,
                 "duels_duels_mastery": 1,
                 "bedwars_level": 3,
                 "general_coins": 1963,
@@ -1806,9 +1812,9 @@
                 "arena_bossed": 1,
                 "arena_gladiator": 1,
                 "skywars_kits_team": 3,
-                "buildbattle_guess_the_build_guesses": 133,
-                "buildbattle_guess_the_build_winner": 13,
-                "buildbattle_build_battle_score": 480,
+                "buildbattle_guess_the_build_guesses": 583,
+                "buildbattle_guess_the_build_winner": 55,
+                "buildbattle_build_battle_score": 500,
                 "skywars_kills_team": 5,
                 "skywars_wins_team": 1,
                 "walls3_jack_of_all_trades": 6,
@@ -1819,7 +1825,7 @@
             "channel": "ALL",
             "challenges": {
                 "all_time": {
-                    "DUELS__target_practice_challenge": 91,
+                    "DUELS__target_practice_challenge": 104,
                     "TNTGAMES__bow_spleef_challenge": 2,
                     "ARCADE__hypixel_says_challenge": 2,
                     "BEDWARS__support": 3,
@@ -1829,8 +1835,8 @@
                     "SKYWARS__rush_challenge": 7,
                     "ARENA__where_is_it_challenge": 1,
                     "ARENA__no_ultimate_challenge": 1,
-                    "BUILD_BATTLE__guesser_challenge": 9,
-                    "BUILD_BATTLE__top_3_challenge": 11,
+                    "BUILD_BATTLE__guesser_challenge": 14,
+                    "BUILD_BATTLE__top_3_challenge": 16,
                     "QUAKECRAFT__combo_challenge": 1,
                     "QUAKECRAFT__don't_blink_challenge": 1
                 },
@@ -1843,7 +1849,17 @@
                     "DUELS__target_practice_challenge": 5
                 },
                 "day_g": {
-                    "DUELS__target_practice_challenge": 8
+                    "DUELS__target_practice_challenge": 9
+                },
+                "day_h": {
+                    "DUELS__target_practice_challenge": 9
+                },
+                "day_i": {
+                    "DUELS__target_practice_challenge": 3
+                },
+                "day_j": {
+                    "BUILD_BATTLE__guesser_challenge": 5,
+                    "BUILD_BATTLE__top_3_challenge": 5
                 }
             },
             "friendRequestsUuid": [],
@@ -1864,7 +1880,7 @@
                 "summer": {
                     "2022": {
                         "levelling": {
-                            "experience": 6663
+                            "experience": 7331
                         }
                     }
                 }
@@ -2168,7 +2184,8 @@
                     "gadget_tetherball",
                     "rankcolor_gold",
                     "rankcolor_green",
-                    "rankcolor_yellow"
+                    "rankcolor_yellow",
+                    "rankcolor_light_purple"
                 ]
             },
             "newPackageRank": "VIP",
@@ -2193,10 +2210,14 @@
                 "6-2022": {
                     "VIP": true,
                     "REGULAR": true
+                },
+                "7-2022": {
+                    "VIP": true,
+                    "REGULAR": true
                 }
             },
             "eugene": {
-                "dailyTwoKExp": 1656177589003
+                "dailyTwoKExp": 1656654700480
             },
             "petConsumables": {
                 "BREAD": 6,
@@ -2237,7 +2258,6 @@
             "totalRewards": 1,
             "levelingReward_6": true,
             "levelingReward_7": true,
-            "mostRecentGameType": "DUELS",
             "levelingReward_8": true,
             "levelingReward_9": true,
             "levelingReward_10": true,
@@ -2293,7 +2313,9 @@
             "levelingReward_60": true,
             "levelingReward_61": true,
             "levelingReward_62": true,
-            "levelingReward_63": true
+            "levelingReward_63": true,
+            "mostRecentGameType": "DUELS",
+            "levelingReward_64": true
         }
     }
 }
