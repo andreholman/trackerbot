@@ -19,7 +19,7 @@
             "knownAliasesLower": [
                 "5of"
             ],
-            "lastLogin": 1657068015425,
+            "lastLogin": 1657437998093,
             "playername": "5of",
             "achievementsOneTime": [
                 "general_first_join",
@@ -130,7 +130,7 @@
                     }
                 },
                 "Arena": {
-                    "coins": 292006,
+                    "coins": 294666,
                     "keys": 1,
                     "coins_spent": 90000,
                     "magical_chest": 200,
@@ -181,7 +181,7 @@
                     "healed_1v1": 130
                 },
                 "GingerBread": {
-                    "coins": 371511,
+                    "coins": 374171,
                     "packages": [
                         "achievementsupdatedd",
                         "achievementsupdatedc",
@@ -198,13 +198,13 @@
                     "horn": "DEFAULT"
                 },
                 "Paintball": {
-                    "coins": 371511,
+                    "coins": 374171,
                     "packages": [
                         "achievement_flag_2"
                     ]
                 },
                 "Quake": {
-                    "coins": 371883,
+                    "coins": 374543,
                     "packages": [
                         "achievement_flag_3"
                     ],
@@ -228,11 +228,11 @@
                     "deaths": 12
                 },
                 "VampireZ": {
-                    "coins": 371511,
+                    "coins": 374171,
                     "updated_stats": true
                 },
                 "Walls": {
-                    "coins": 371511,
+                    "coins": 374171,
                     "InventoryLayout2": {
                         "22": "287,0,NONAME",
                         "0": "274,0,NONAME",
@@ -243,10 +243,10 @@
                     }
                 },
                 "Battleground": {
-                    "coins": 22215
+                    "coins": 24490
                 },
                 "SkyWars": {
-                    "coins": 95526,
+                    "coins": 97801,
                     "skywars_chests": 12,
                     "levelFormatted": "§f7⋆",
                     "souls": 101,
@@ -526,11 +526,11 @@
                     "tnt_madness_explained": 1
                 },
                 "SuperSmash": {
-                    "coins": 20460,
+                    "coins": 22835,
                     "lastLevel_THE_BULK": 0
                 },
                 "TNTGames": {
-                    "coins": 21380,
+                    "coins": 23570,
                     "wins": 0,
                     "packages": [
                         "shop_2018",
@@ -554,11 +554,10 @@
                     "new_firewizard_regen": 1,
                     "new_firewizard_explode": 1,
                     "deaths_bowspleef": 2,
-                    "tags_bowspleef": 30,
-                    "winstreak": 0
+                    "tags_bowspleef": 30
                 },
                 "HungerGames": {
-                    "coins": 21645,
+                    "coins": 24820,
                     "wins_teams_normal": 0,
                     "wins": 0,
                     "packages": [
@@ -570,7 +569,7 @@
                     "autoarmor": true
                 },
                 "Arcade": {
-                    "coins": 1305033,
+                    "coins": 1310197,
                     "simon_song": false,
                     "round_wins_simon_says": 55,
                     "top_score_simon_says": 28,
@@ -578,7 +577,7 @@
                     "wins_simon_says": 3
                 },
                 "Walls3": {
-                    "coins": 368985,
+                    "coins": 371360,
                     "classes": {
                         "herobrine": {
                             "skill_level_dChecked5": true,
@@ -614,12 +613,12 @@
                     ]
                 },
                 "UHC": {
-                    "coins": 19570,
+                    "coins": 22115,
                     "saved_stats": true,
                     "clearup_achievement": true
                 },
                 "MCGO": {
-                    "coins": 21984,
+                    "coins": 23614,
                     "bombs_defused": 0,
                     "bombs_planted": 0,
                     "game_wins": 2,
@@ -665,57 +664,38 @@
                     "selected_1_new": "sumo",
                     "selected_2_new": "blitz",
                     "arena_mode_uhc": "HIGH",
-                    "arena_mode_op": "HIGH",
+                    "arena_mode_op": "NORMAL",
                     "arena_mode_soup": "HIGH",
-                    "arena_mode_bow": "LOW",
-                    "games_played_duels": 7662,
+                    "arena_mode_bow": "HIGH",
+                    "games_played_duels": 7668,
                     "chat_enabled": "on",
                     "maps_won_on": [
-                        "Duel Arena"
+                        "Duel Arena",
+                        "Spikerock Bay",
+                        "Arena"
                     ],
-                    "best_overall_winstreak": 0,
-                    "current_winstreak": 0,
-                    "best_all_modes_winstreak": 0,
-                    "best_uhc_winstreak": 0,
-                    "best_skywars_winstreak": 0,
-                    "best_mega_walls_winstreak": 0,
-                    "best_blitz_winstreak": 0,
-                    "best_op_winstreak": 0,
-                    "best_classic_winstreak": 0,
-                    "best_bow_winstreak": 0,
-                    "best_no_debuff_winstreak": 0,
-                    "best_combo_winstreak": 0,
-                    "best_tnt_games_winstreak": 0,
-                    "best_sumo_winstreak": 0,
-                    "best_bridge_winstreak": 0,
-                    "best_parkour_winstreak": 0,
-                    "best_boxing_winstreak": 0,
-                    "best_arena_winstreak": 281,
-                    "best_winstreak_mode_duel_arena": 281,
-                    "current_winstreak_mode_duel_arena": 3,
-                    "current_arena_winstreak": 3,
-                    "damage_dealt": 224493,
-                    "duel_arena_damage_dealt": 223776,
-                    "duel_arena_health_regenerated": 79173,
-                    "duel_arena_melee_hits": 131480,
-                    "duel_arena_melee_swings": 259258,
-                    "duel_arena_rounds_played": 7599,
+                    "damage_dealt": 224678,
+                    "duel_arena_damage_dealt": 223800,
+                    "duel_arena_health_regenerated": 79192,
+                    "duel_arena_melee_hits": 131501,
+                    "duel_arena_melee_swings": 259290,
+                    "duel_arena_rounds_played": 7601,
                     "duel_arena_wins": 6712,
-                    "health_regenerated": 79173,
-                    "melee_hits": 131626,
-                    "melee_swings": 259597,
-                    "rounds_played": 7602,
-                    "wins": 6712,
-                    "blocks_placed": 18750,
-                    "coins": 3728,
-                    "duel_arena_blocks_placed": 18191,
-                    "arena_mode_classic": "LOW",
+                    "health_regenerated": 79202,
+                    "melee_hits": 131649,
+                    "melee_swings": 259636,
+                    "rounds_played": 7608,
+                    "wins": 6716,
+                    "blocks_placed": 18753,
+                    "coins": 4182,
+                    "duel_arena_blocks_placed": 18194,
+                    "arena_mode_classic": "HIGH",
                     "kit_menu_option": "on",
-                    "bow_hits": 10704,
-                    "bow_shots": 28059,
-                    "duel_arena_bow_hits": 10679,
-                    "duel_arena_bow_shots": 28010,
-                    "arena_mode_no_debuff": "HIGH",
+                    "bow_hits": 10751,
+                    "bow_shots": 28154,
+                    "duel_arena_bow_hits": 10682,
+                    "duel_arena_bow_shots": 28017,
+                    "arena_mode_no_debuff": "LOW",
                     "layout_bow_duel_layout": {
                         "0": "bow",
                         "4": "arrow",
@@ -797,7 +777,7 @@
                     "bridge_duel_melee_swings": 330,
                     "bridge_duel_rounds_played": 2,
                     "golden_apples_eaten": 15,
-                    "duels_recently_played2": "DUEL_ARENA#SW_DUEL#BRIDGE_DUEL##",
+                    "duels_recently_played2": "MW_DOUBLES#DUEL_ARENA#SW_DUEL#BRIDGE_DUEL#",
                     "all_modes_master_title_prestige": 5,
                     "layout_bowspleef_duel_layout": {
                         "0": "bow",
@@ -881,7 +861,20 @@
                     "sw_duels_kit_new3": "kit_ranked_ranked_armorer",
                     "sumo_duel_melee_hits": 6,
                     "sumo_duel_melee_swings": 9,
-                    "sumo_duel_rounds_played": 1
+                    "sumo_duel_rounds_played": 1,
+                    "mw_duels_class": "Hunter",
+                    "hunter_kit_wins": 4,
+                    "kit_wins": 4,
+                    "mw_doubles_bow_hits": 44,
+                    "mw_doubles_bow_shots": 88,
+                    "mw_doubles_damage_dealt": 161,
+                    "mw_doubles_health_regenerated": 10,
+                    "mw_doubles_hunter_kit_wins": 4,
+                    "mw_doubles_kit_wins": 4,
+                    "mw_doubles_melee_swings": 7,
+                    "mw_doubles_rounds_played": 4,
+                    "mw_doubles_wins": 4,
+                    "mw_doubles_melee_hits": 2
                 },
                 "Bedwars": {
                     "packages": [
@@ -892,16 +885,14 @@
                     "bedwars_easter_boxes": 2,
                     "bedwars_boxes": 11,
                     "selected_challenge_type": "COLLECTOR",
-                    "games_played_bedwars_1": 17,
+                    "games_played_bedwars_1": 18,
                     "challenges": {
                         "bw_challenge_collector_best_time": 156142
                     },
-                    "four_three_winstreak": 0,
-                    "winstreak": 14,
                     "_items_purchased_bedwars": 483,
                     "beds_broken_bedwars": 31,
                     "coins": 6038,
-                    "deaths_bedwars": 31,
+                    "deaths_bedwars": 32,
                     "entity_attack_deaths_bedwars": 18,
                     "entity_attack_final_kills_bedwars": 40,
                     "entity_attack_kills_bedwars": 21,
@@ -922,13 +913,13 @@
                     "four_three_resources_collected_bedwars": 460,
                     "four_three_void_kills_bedwars": 3,
                     "four_three_wins_bedwars": 2,
-                    "games_played_bedwars": 17,
-                    "gold_resources_collected_bedwars": 476,
-                    "iron_resources_collected_bedwars": 3725,
+                    "games_played_bedwars": 18,
+                    "gold_resources_collected_bedwars": 477,
+                    "iron_resources_collected_bedwars": 3726,
                     "items_purchased_bedwars": 520,
                     "kills_bedwars": 53,
                     "permanent_items_purchased_bedwars": 37,
-                    "resources_collected_bedwars": 4302,
+                    "resources_collected_bedwars": 4304,
                     "void_kills_bedwars": 31,
                     "wins_bedwars": 16,
                     "diamond_resources_collected_bedwars": 66,
@@ -938,31 +929,30 @@
                     "four_three_void_deaths_bedwars": 4,
                     "void_deaths_bedwars": 13,
                     "beds_lost_bedwars": 3,
-                    "final_deaths_bedwars": 1,
+                    "final_deaths_bedwars": 2,
                     "four_three_beds_lost_bedwars": 1,
                     "four_three_final_deaths_bedwars": 1,
                     "four_three_losses_bedwars": 1,
                     "four_three_void_final_deaths_bedwars": 1,
                     "four_three_void_final_kills_bedwars": 2,
-                    "losses_bedwars": 1,
+                    "losses_bedwars": 2,
                     "void_final_deaths_bedwars": 1,
                     "void_final_kills_bedwars": 21,
-                    "eight_one_winstreak": 4,
                     "eight_one__items_purchased_bedwars": 150,
                     "eight_one_beds_broken_bedwars": 18,
-                    "eight_one_deaths_bedwars": 3,
+                    "eight_one_deaths_bedwars": 4,
                     "eight_one_diamond_resources_collected_bedwars": 35,
                     "eight_one_emerald_resources_collected_bedwars": 9,
                     "eight_one_entity_attack_final_kills_bedwars": 12,
                     "eight_one_entity_attack_kills_bedwars": 6,
                     "eight_one_final_kills_bedwars": 19,
-                    "eight_one_games_played_bedwars": 4,
-                    "eight_one_gold_resources_collected_bedwars": 190,
-                    "eight_one_iron_resources_collected_bedwars": 1348,
+                    "eight_one_games_played_bedwars": 5,
+                    "eight_one_gold_resources_collected_bedwars": 191,
+                    "eight_one_iron_resources_collected_bedwars": 1349,
                     "eight_one_items_purchased_bedwars": 159,
                     "eight_one_kills_bedwars": 14,
                     "eight_one_permanent_items_purchased_bedwars": 9,
-                    "eight_one_resources_collected_bedwars": 1582,
+                    "eight_one_resources_collected_bedwars": 1584,
                     "eight_one_void_deaths_bedwars": 3,
                     "eight_one_void_final_kills_bedwars": 5,
                     "eight_one_void_kills_bedwars": 8,
@@ -973,7 +963,6 @@
                     "magic_final_kills_bedwars": 3,
                     "eight_one_beds_lost_bedwars": 1,
                     "favourites_2": "wool,stone_sword,chainmail_boots,golden_apple,bow,speed_ii_potion_(45_seconds),tnt,oak_wood_planks,iron_sword,iron_boots,shears,arrow,invisibility_potion_(30_seconds),water_bucket,fireball,null,null,wooden_pickaxe,wooden_axe,null,null",
-                    "four_four_winstreak": 10,
                     "four_four__items_purchased_bedwars": 258,
                     "four_four_beds_broken_bedwars": 11,
                     "four_four_emerald_resources_collected_bedwars": 19,
@@ -999,7 +988,12 @@
                     "four_four_projectile_final_kills_bedwars": 1,
                     "projectile_final_kills_bedwars": 1,
                     "four_four_magic_kills_bedwars": 1,
-                    "magic_kills_bedwars": 1
+                    "magic_kills_bedwars": 1,
+                    "favorite_slots": "Melee,null,null,Blocks,null,null,null,null,Compass",
+                    "eight_one_final_deaths_bedwars": 1,
+                    "eight_one_losses_bedwars": 1,
+                    "eight_one_magic_deaths_bedwars": 1,
+                    "magic_deaths_bedwars": 1
                 },
                 "Legacy": {
                     "preferredChannel": "ALL",
@@ -1038,7 +1032,7 @@
                     "wins_snowfall": 7,
                     "wins_snowfall_MURDER_ASSASSINS": 1,
                     "mm_chests": 11,
-                    "alpha_chance": 7,
+                    "alpha_chance": 8,
                     "bow_kills": 141,
                     "bow_kills_MURDER_INFECTION": 141,
                     "bow_kills_archives_top_floor": 11,
@@ -1418,17 +1412,17 @@
                     "kills_hollywood_MURDER_INFECTION": 1
                 },
                 "BuildBattle": {
-                    "coins": 35250,
-                    "games_played": 96,
+                    "coins": 47385,
+                    "games_played": 138,
                     "monthly_coins_a": 9090,
-                    "weekly_coins_b": 960,
-                    "correct_guesses": 583,
-                    "score": 500,
-                    "wins": 55,
-                    "wins_guess_the_build": 55,
+                    "weekly_coins_b": 13095,
+                    "correct_guesses": 767,
+                    "score": 665,
+                    "wins": 68,
+                    "wins_guess_the_build": 68,
                     "weekly_coins_a": 34290,
                     "selected_backdrop": "backdrops_none",
-                    "monthly_coins_b": 26160
+                    "monthly_coins_b": 38295
                 },
                 "WoolGames": {
                     "progression": {
@@ -1760,19 +1754,19 @@
                 }
             },
             "claimed_century_cake200": 1649170783377,
-            "lastLogout": 1657068365659,
-            "karma": 666240,
-            "networkExp": 5771547.0,
+            "lastLogout": 1657450696926,
+            "karma": 715890,
+            "networkExp": 5887520.0,
             "achievementTracking": [],
-            "achievementPoints": 1490,
+            "achievementPoints": 1520,
             "levelingReward_0": true,
             "achievements": {
-                "duels_duels_traveller": 1,
-                "duels_duels_win_streak": 2,
-                "duels_duels_winner": 6720,
-                "general_wins": 3564,
+                "duels_duels_traveller": 3,
+                "duels_duels_win_streak": 4,
+                "duels_duels_winner": 6724,
+                "general_wins": 3581,
                 "duels_arena_mastery": 5303,
-                "general_challenger": 170,
+                "general_challenger": 191,
                 "duels_duels_mastery": 1,
                 "bedwars_level": 3,
                 "general_coins": 1963,
@@ -1781,12 +1775,12 @@
                 "easter_throw_eggs": 128,
                 "arcade_arcade_banker": 715,
                 "arcade_arcade_winner": 3,
-                "general_quest_master": 16,
+                "general_quest_master": 17,
                 "copsandcrims_practice_makes_perfect": 28,
                 "arena_climb_the_ranks": 2000,
                 "gingerbread_banker": 363271,
                 "murdermystery_hitman": 7,
-                "murdermystery_hoarder": 686,
+                "murdermystery_hoarder": 687,
                 "duels_duels_division": 5,
                 "murdermystery_survival_skills": 54,
                 "bedwars_beds": 32,
@@ -1812,9 +1806,9 @@
                 "arena_bossed": 1,
                 "arena_gladiator": 1,
                 "skywars_kits_team": 3,
-                "buildbattle_guess_the_build_guesses": 583,
-                "buildbattle_guess_the_build_winner": 55,
-                "buildbattle_build_battle_score": 500,
+                "buildbattle_guess_the_build_guesses": 767,
+                "buildbattle_guess_the_build_winner": 68,
+                "buildbattle_build_battle_score": 665,
                 "skywars_kills_team": 5,
                 "skywars_wins_team": 1,
                 "walls3_jack_of_all_trades": 6,
@@ -1825,7 +1819,7 @@
             "channel": "ALL",
             "challenges": {
                 "all_time": {
-                    "DUELS__target_practice_challenge": 104,
+                    "DUELS__target_practice_challenge": 105,
                     "TNTGAMES__bow_spleef_challenge": 2,
                     "ARCADE__hypixel_says_challenge": 2,
                     "BEDWARS__support": 3,
@@ -1835,38 +1829,28 @@
                     "SKYWARS__rush_challenge": 7,
                     "ARENA__where_is_it_challenge": 1,
                     "ARENA__no_ultimate_challenge": 1,
-                    "BUILD_BATTLE__guesser_challenge": 14,
-                    "BUILD_BATTLE__top_3_challenge": 16,
+                    "BUILD_BATTLE__guesser_challenge": 23,
+                    "BUILD_BATTLE__top_3_challenge": 27,
                     "QUAKECRAFT__combo_challenge": 1,
                     "QUAKECRAFT__don't_blink_challenge": 1
                 },
-                "day_e": {
-                    "DUELS__target_practice_challenge": 4
+                "day_c": {
+                    "DUELS__target_practice_challenge": 1
                 },
-                "day_f": {
-                    "QUAKECRAFT__combo_challenge": 1,
-                    "QUAKECRAFT__don't_blink_challenge": 1,
-                    "DUELS__target_practice_challenge": 5
-                },
-                "day_g": {
-                    "DUELS__target_practice_challenge": 9
-                },
-                "day_h": {
-                    "DUELS__target_practice_challenge": 9
-                },
-                "day_i": {
-                    "DUELS__target_practice_challenge": 3
-                },
-                "day_j": {
+                "day_d": {
                     "BUILD_BATTLE__guesser_challenge": 5,
                     "BUILD_BATTLE__top_3_challenge": 5
+                },
+                "day_e": {
+                    "BUILD_BATTLE__guesser_challenge": 4,
+                    "BUILD_BATTLE__top_3_challenge": 6
                 }
             },
             "friendRequestsUuid": [],
             "socialMedia": {
                 "links": {
                     "INSTAGRAM": "instagram.com/abgneal1",
-                    "DISCORD": "https://discord.gg/Zwz9WS9C"
+                    "DISCORD": "https://discord.gg/UESgkKbpq2"
                 },
                 "prompt": true
             },
@@ -1880,7 +1864,7 @@
                 "summer": {
                     "2022": {
                         "levelling": {
-                            "experience": 7331
+                            "experience": 17399
                         }
                     }
                 }
@@ -2006,31 +1990,40 @@
                 },
                 "duels_player": {
                     "active": {
-                        "objectives": {},
+                        "objectives": {
+                            "play": 4
+                        },
                         "started": 1650586269162
                     }
                 },
                 "duels_killer": {
                     "active": {
-                        "objectives": {},
+                        "objectives": {
+                            "kill": 0
+                        },
                         "started": 1650586269412
                     }
                 },
                 "duels_winner": {
-                    "active": {
-                        "objectives": {},
-                        "started": 1650586269712
-                    }
+                    "completions": [
+                        {
+                            "time": 1657324341088
+                        }
+                    ]
                 },
                 "duels_weekly_kills": {
                     "active": {
-                        "objectives": {},
+                        "objectives": {
+                            "kill": 0
+                        },
                         "started": 1650586269962
                     }
                 },
                 "duels_weekly_wins": {
                     "active": {
-                        "objectives": {},
+                        "objectives": {
+                            "win": 4
+                        },
                         "started": 1650586270212
                     }
                 },
@@ -2159,7 +2152,8 @@
                 "for_points_1100": 1654152040431,
                 "for_points_1200": 1654373175784,
                 "for_points_1300": 1654826650590,
-                "for_points_1400": 1656448166401
+                "for_points_1400": 1656448166401,
+                "for_points_1500": 1657407229063
             },
             "levelingReward_3": true,
             "vanityMeta": {
@@ -2217,7 +2211,7 @@
                 }
             },
             "eugene": {
-                "dailyTwoKExp": 1656654700480
+                "dailyTwoKExp": 1657254409858
             },
             "petConsumables": {
                 "BREAD": 6,
@@ -2314,8 +2308,11 @@
             "levelingReward_61": true,
             "levelingReward_62": true,
             "levelingReward_63": true,
+            "levelingReward_64": true,
             "mostRecentGameType": "DUELS",
-            "levelingReward_64": true
+            "outfit": {
+                "CHESTPLATE": "FIREMAN_CHESTPLATE"
+            }
         }
     }
 }

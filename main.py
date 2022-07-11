@@ -54,24 +54,30 @@ class BotClient(discord.Client):
 		await client.get_channel(channel).send(content="**<t:{0}:d> @ <t:{0}:T>** \u27eb ".format(str(floor(time.time())))+str(content))
 
 	async def status_change(r, pr):
-		match r["online"]:
-			case True:
-				match r.get("map"):
-					case None:
-						if r["mode"] == "LOBBY" and not pr["online"]:
-							await BotClient.post_log(f'Joined Hypixel and entered the {clean_name(r["gameType"])} lobby.', 991322369291452517)
-						else:
-							await BotClient.post_log(f'Joined the {clean_name(r["gameType"])} lobby.', 991322369291452517)
-					case "Duel Arena":
-						await BotClient.post_log("Pulled up to Duels Arena.", 991322369291452517)
-					case _:
-						parsed_mode = readify(r["mode"])
+		if r["online"]:
+			match r.get("map"):
+				case None:
+					if r["mode"] == "LOBBY" and not pr["online"]:
+						await BotClient.post_log(f'Joined Hypixel and entered the {clean_name(r["gameType"])} lobby.', 991322369291452517)
+					else:
+						await BotClient.post_log(f'Joined the {clean_name(r["gameType"])} lobby.', 991322369291452517)
+				case "Duel Arena":
+					await BotClient.post_log("Pulled up to Duels Arena.", 991322369291452517)
+				case _:
+					parsed_mode = readify(r["mode"])
+					parsed_game = clean_name(r["gameType"])
+					parsed_mode = parsed_mode.replace(parsed_game, "")
+					if parsed_mode[0] == " ":
+						parsed_mode = parsed_mode[1:]
+					if pr["online"]:
 						if r["mode"] == pr["mode"]:
 							await BotClient.post_log(f'Requeued {parsed_mode} to the map {r["map"]}.', 991322369291452517)
-						elif r["mode"] != pr["mode"] or not pr["online"]:
-							await BotClient.post_log(f'Queued {clean_name(r["gameType"])} in {parsed_mode} on the map {r["map"]}', 991322369291452517)
-			case False:
-				await BotClient.post_log("Left Hypixel", 991322369291452517)
+						else:
+							await BotClient.post_log(f'Queued {parsed_game} in {parsed_mode} on the map {r["map"]}.', 991322369291452517)
+					else:
+						await BotClient.post_log(f'Logged on and queued {parsed_game} in {parsed_mode} on the map {r["map"]}.', 991322369291452517)	
+		else:
+			await BotClient.post_log("Left Hypixel.", 991322369291452517)
 
 	async def stat_change(r, pr):
 		new_diff = convert_to_lists(list(diff(pr, r)))
@@ -126,6 +132,7 @@ class BotClient(discord.Client):
 		await BotClient.post_log("Discord bot restarted")
 
 		activity = discord.Activity(name="Duels Arena", type=discord.ActivityType.playing)
+		await client.change_presence(status=discord.Status.dnd, activity=activity)
 		
 		async def playercount_periodic():
 			requested_counts = json.loads(requests.get(
@@ -163,44 +170,41 @@ class BotClient(discord.Client):
 
 		async def account_periodic():
 			global res, prev_res
-			try: 
-				with open("saved_data.json", "r", encoding="utf-8") as prev_data:
-					prev_res = json.load(prev_data)
-				try:
-					res = {
-						"status": json.loads(requests.get(
-							"http://api.hypixel.net/status",
-							params=request_params
-						).text),
-						"stat": json.loads(requests.get(
-							"http://api.hypixel.net/player",
-							params=request_params
-						).text)
-					}
-				except Exception as err:
-					await BotClient.post_log("Error! In API request: " + str(err.args))
-
-				if res != prev_res:  # on player change!
-					match res["status"]["success"]:
-						case True:
-							major_change = False
-							if res["status"]["session"] != prev_res["status"]["session"]:
-								major_change = True
-								await status_change(res["status"]["session"], prev_res["status"]["session"])
-							if res["stat"]["player"]["stats"]["Duels"] != prev_res["stat"]["player"]["stats"]["Duels"]:
-								major_change = True
-								await stat_change(res["stat"]["player"]["stats"]["Duels"], prev_res["stat"]["player"]["stats"]["Duels"])
-							if major_change:
-								with open("saved_data.json", "w", encoding="utf-8") as f:
-									print("WRITING to file!")
-									json.dump(res, f, ensure_ascii=False, indent=4)
-							
-						case False:
-							await BotClient.post_log("Error! " + res["status"]["cause"])
-				prev_res = res
-				await asyncio.sleep(5)
+			with open("saved_data.json", "r", encoding="utf-8") as prev_data:
+				prev_res = json.load(prev_data)
+			try:
+				res = {
+					"status": json.loads(requests.get(
+						"http://api.hypixel.net/status",
+						params=request_params
+					).text),
+					"stat": json.loads(requests.get(
+						"http://api.hypixel.net/player",
+						params=request_params
+					).text)
+				}
 			except Exception as err:
-				await BotClient.post_log("Error! " + str(err.args))
+				await BotClient.post_log("Error! In API request: " + str(err.args))
+
+			if res != prev_res:  # on player change!
+				match res["status"]["success"]:
+					case True:
+						major_change = False
+						if res["status"]["session"] != prev_res["status"]["session"]:
+							major_change = True
+							await status_change(res["status"]["session"], prev_res["status"]["session"])
+						if res["stat"]["player"]["stats"]["Duels"] != prev_res["stat"]["player"]["stats"]["Duels"]:
+							major_change = True
+							await stat_change(res["stat"]["player"]["stats"]["Duels"], prev_res["stat"]["player"]["stats"]["Duels"])
+						if major_change:
+							with open("saved_data.json", "w", encoding="utf-8") as f:
+								print("WRITING to file!")
+								json.dump(res, f, ensure_ascii=False, indent=4)
+						
+					case False:
+						await BotClient.post_log("Error! " + res["status"]["cause"])
+			prev_res = res
+			await asyncio.sleep(5)
 		
 		def account_async():
 			loop = asyncio.get_event_loop()
